@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debugging CSS - Fixed Layout</title>
+  <style>
+ 
+    * {
+      box-sizing: border-box;    
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;   
+      margin: 20px 0;
+    }
+
+    .main {
+      background-color: lightgray;
+      flex: 2; 
+      margin-right: 20px;  
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: lightgreen;
+      flex: 1; 
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;    
+      }
+      .main {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="content">
+      <div class="main">Main Content</div>
+      <div class="sidebar">Sidebar</div>
+    </div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
