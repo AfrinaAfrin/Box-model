@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header and Fixed Footer</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: darkblue;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Fixed Footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: darkblue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Main content */
+    main {
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sticky Header</h1>
+  </header>
+
+  <main>
+    <h2>Scroll Down to See Sticky Header and Fixed Footer</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac mauris eu sapien venenatis cursus.</p>
+    <p>Donec ultricies, nisi nec gravida fringilla, eros urna feugiat ligula, at bibendum eros risus ac eros.</p>
+    <p>Sed dictum quam at libero gravida, nec posuere libero suscipit. Integer vel justo at neque egestas egestas.</p>
+    <p>Aliquam erat volutpat. Nulla ac erat malesuada, malesuada libero non, dictum neque.</p>
+    <p>Phasellus non nulla id sem lacinia luctus a sit amet eros. Sed vel vestibulum augue.</p>
+    <p>Etiam in augue sed nulla efficitur pharetra. Morbi fermentum erat in nunc volutpat blandit.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Quisque fermentum libero eget augue consectetur, sit amet dignissim sem tincidunt.</p>
+    <p>Ut varius lacus nec velit bibendum, in rutrum felis euismod. Curabitur nec magna eu arcu fringilla convallis.</p>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+  </main>
+
+  <footer>
+    <p>Fixed Footer</p>
+  </footer>
+
+</body>
+</html>
