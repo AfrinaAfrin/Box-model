@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Properties</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+
+
+    .block-element {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 2px solid blue;
+      margin: 10px 0;
+      background-color: lightblue;
+    }
+
+    
+    .inline-element {
+      display: inline;
+      background-color: lightgreen;
+      padding: 5px;
+      border: 1px solid green;
+      margin: 0 5px;
+    }
+
+    
+    .inline-block-element {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-color: lightcoral;
+      border: 2px solid red;
+      margin: 10px;
+    }
+
+
+    .hidden-element {
+      display: none;
+      padding: 10px;
+      background-color: lightgray;
+      border: 2px dashed gray;
+      margin: 10px;
+    }
+
+
+    .toggle:hover + .hidden-element {
+      display: block;
+    }
+
+
+    .toggle {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background-color: darkblue;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .toggle:hover {
+      background-color: royalblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Display Properties Demonstration</h1>
+
+
+  <div class="block-element">This is a block element.</div>
+  <span class="inline-element">This is an inline element.</span>
+  <div class="inline-block-element">Inline-block element</div>
+
+
+  <div class="toggle">Hover to Toggle Hidden Element</div>
+  <div class="hidden-element">This is the hidden element, now visible!</div>
+</body>
+</html>
+
+ 
